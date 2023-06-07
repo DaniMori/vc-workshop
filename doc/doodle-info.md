@@ -24,9 +24,11 @@ basis, for those interested who fulfill these criteria:
 
 *Duration:* 180 min
 
+*Time Zone:* Sweden, Stockholm (GMT+2)
+
 *Time slots:*
 
-June 19:  9:00
-June 19: 13:00
-June 20:  9:00
+June 19: 9:00\
+June 19: 13:00\
+June 20: 9:00\
 June 20: 13:00
