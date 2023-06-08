@@ -1,0 +1,158 @@
+---
+title:       "Presentation title"
+subtitle:    "Presentation subtitle"
+date:        2023-06-20
+date-format: long
+author:      |
+  Daniel Morillo, Ph.D.\
+  [![](../www/GitHub-Logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
+  [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
+institute:   |
+  [![](../www/cibersam.png){height="75"}](https://www.cibersam.es/) &emsp;&emsp;
+  [![](../www/ki_logo.jpg){height="85"}](https://ki.se/)
+format:
+  revealjs:
+    slide-number:     false
+    fig-cap-location: bottom
+    transition:       none
+    incremental:      false
+    auto-stretch:     false
+    self-contained:   true
+    theme:            ../www/extra-styles.scss
+    view-distance:    3
+    template-partials:
+      - ../www/title-slide.html
+knitr: true
+---
+
+# Section title
+
+## Image slide
+
+![](../www/phd_versions.png){fig-align="center" height="520"}
+
+::: aside
+*title* by [Attribution](link)
+:::
+
+::: notes
+<!-- TODO: Include notes -->
+:::
+
+## List slide
+
+-   BP1
+
+. . .
+
+-   BP2
+
+. . .
+
+-   BP3
+
+. . .
+
+-   BP4
+
+::: notes
+<!-- TODO: Notes -->
+:::
+
+## 2-col slide {.smaller}
+
+::: columns
+::: {.column width="60%"}
+![](../www/image_path.jpg){fig-align="center" height="100%"}
+:::
+
+::: {.column width="40%"}
+</br>
+
+::: fragment
+-   BP1
+
+    -   BP 1.1
+
+    -   BP 1.2
+:::
+
+</br>
+
+::: fragment
+-   BP2
+:::
+:::
+:::
+
+::: aside
+*title* by [Attribution](link)
+:::
+
+::: notes
+<!-- TODO: Notes -->
+:::
+
+## Image with text above
+
+Text above
+
+![](../www/vc-Lucas.jpg){fig-align="center" height="450"}
+
+## Slide with citation
+
+> Citation.\
+
+---[Author \@ website](link)
+
+## Embedded-file, centered
+
+Text above
+
+<br>
+
+::: columns
+::: {.column align="center" width="25%"}
+:::
+
+::: {.column align="center" width="50%"}
+```{embed, file = "../www/filepath.md"}
+```
+:::
+:::
+
+::: notes
+<!-- TODO: Notes -->
+:::
+
+## Subtitles and numbering {.smaller}
+
+### Subtitle 1:
+
+0.  LE1
+
+1.  LE2
+
+2.  LE3
+
+<br>
+
+::: fragment
+### Subtitle 2:
+
+-   BP
+:::
+
+##  {.center}
+
+::: {#title-slide .center}
+### Many thanks!
+
+<br>
+
+### Tack så mycket!
+
+<br>
+
+### ¡Muchas gracias!
+:::
