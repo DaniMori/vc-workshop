@@ -1,15 +1,14 @@
 ---
-title:       "Presentation title"
-subtitle:    "Presentation subtitle"
+title:       "Version control with git + Github for scientific workflows"
 date:        2023-06-20
 date-format: long
 author:      |
   Daniel Morillo, Ph.D.\
-  [![](../www/GitHub-Logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
+  [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
   [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
 institute:   |
   [![](../www/cibersam.png){height="75"}](https://www.cibersam.es/) &emsp;&emsp;
-  [![](../www/ki_logo.jpg){height="85"}](https://ki.se/)
+  [![](../www/ki-logo.jpg){height="85"}](https://ki.se/)
 format:
   revealjs:
     slide-number:     false
