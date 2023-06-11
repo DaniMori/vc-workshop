@@ -122,11 +122,93 @@ Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
     & Artificial Intelligence Laboratory](https://www.csail.mit.edu/)
 :::
 
+# First steps in GitHub
 
+![](../www/github-mascot.png)
+
+::: aside
+Taken from [Analyzing GitHub with the search
+API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-API/)
+\@ [Perl.com](https://www.perl.com/)
+:::
+
+## Create a repository (I)
+
+1.  [Sign in](https://github.com/login) to your GitHub account
+
+2.  Go to <https://github.com/DaniMori/rproj-template>
+
+3.  Click on "Use this template"
+
+4.  Click on "Create a new repository"
+
+## Create a repository (and II)
+
+::: {.fragment .nonincremental}
+5.  Fill in "Repository name" and "Description" with:
+
+    > **Repository name:** my-first-repo\
+    > **Description:** My first repository ever in GitHub
+
+    OR
+
+    use ***your own project name and description***
+:::
+
+6.  Choose "Private" visibility
+
+7.  Leave "Include all branches" unticked
+
+8.  Click on "Create repository from template"
 
 ::: notes
-<!-- TODO: Notes -->
+Depending on your settings you may be required a 2-factor authentication method
+
+(NEXT)
+
+The template will add some useful pre-cooked features to the new repository
+
+(NEXT)
+
+(NEXT)
+
+(NEXT)
+
+The name must be something short, and representatitve of the project aim
+
+Description must be "short" and direct
+
+(NEXT)
+
+Public: Anyone can see it, even without signing in to GitHub
+
+Private: Only collaborators (we will add them later on)
+
+(NEXT)
+
+We only need the current state of the repository (what is in the last "version"
+of the main branch)
+
+(NEXT)
 :::
+
+## Setting up
+
+``` bash
+# set a user name globally
+git config --global user.name "username"`
+
+# set an email address globally
+git config --global user.email "email@provider.com"
+
+git config --list --global
+```
+
+::: notes
+Why doesn't Rstudio provide GUI functionality for this?
+:::
+
+## Learn more
 
 ## 2-col slide {.smaller}
 
