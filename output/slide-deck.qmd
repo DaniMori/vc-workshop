@@ -14,8 +14,8 @@ format:
     slide-number:     false
     fig-cap-location: bottom
     transition:       none
-    incremental:      false
-    auto-stretch:     false
+    incremental:      true
+    auto-stretch:     true
     self-contained:   true
     theme:            ../www/extra-styles.scss
     view-distance:    3
@@ -172,7 +172,7 @@ Text above
 :::
 
 ::: {.column align="center" width="50%"}
-```{embed, file = "../www/filepath.md"}
+```{embed}
 ```
 :::
 :::
