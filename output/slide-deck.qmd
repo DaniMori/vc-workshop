@@ -1,5 +1,5 @@
 ---
-title:       "Version control with git + Github for scientific workflows"
+title:       "Version control with git + GitHub for scientific workflows"
 date:        2023-06-20
 date-format: long
 author:      |
