@@ -24,35 +24,92 @@ format:
 knitr: true
 ---
 
-# Section title
+# git + GitHub: An overview {#title-slide}
 
-## Image slide
+![](../www/git-github.webp)
 
-![](../www/phd_versions.png){fig-align="center" height="520"}
+## What is git
+
+-   Version control system
+
+. . .
+
+-   "History of changes" of a project
+
+. . .
+
+-   Allows "time-travelling"
+
+<!-- TODO: Include Delorean pic from https://ccn-journal-prod.azurewebsites.net/2021/06/25/back-to-the-future-delorean-says-its-coming-back-and-launches-an-auction/ -->
+
+```{=html}
+<!-- ::: aside
+
+*title* by [Attribution](link)
+
+::: -->
+```
+## What is Github
+
+-   Centralized git server
+
+. . .
+
+-   Backup + collaboration
+
+. . .
+
+-   Nice GUI & features on top of VC
+
+## Typical VC setup
+
+![](../www/git-workflow.png)
 
 ::: aside
-*title* by [Attribution](link)
+Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
 :::
 
 ::: notes
-<!-- TODO: Include notes -->
+-   You have a "local repository"
+
+-   You don't need a "cloud server" to use version control
+
+-   You use a VC server to back-up and collaborate
 :::
 
-## List slide
+## Git jargon
 
--   BP1
-
-. . .
-
--   BP2
+-   **Repository ("repo")**: A "project", where all your files live
 
 . . .
 
--   BP3
+-   **Remote**: The copy of a repository in the server (Github in this case)
 
 . . .
 
--   BP4
+-   **Local**: The copy of a repository in your computer
+
+. . .
+
+-   **Clone**: To copy a local repository from a remote
+
+## Learn more
+
+0.  [I am a Dropbox User and I Don't Get Git](https://garba.org/posts/2021/git/)
+    by [Ernesto Gabarino](https://garba.org/about/me/)
+
+1.  [Git cheat sheet](https://jdsalaro.com/blog/git-cheat-sheet.html) by [Jayson
+    Salazar](https://jdsalaro.com/about.html)
+
+2.  [Pro Git, 2nd edition](https://git-scm.com/book/en/v2), by Scott Chacon and
+    Ben Straub
+
+3.  ["Become a git master"
+    module](https://courses.csail.mit.edu/6.S194/13/lessons/03-git/index.html)
+    from the [Open Source Software Project Lab
+    course](https://courses.csail.mit.edu/6.S194/13/) \@ [MIT's Computer Science
+    & Artificial Intelligence Laboratory](https://www.csail.mit.edu/)
+
 
 ::: notes
 <!-- TODO: Notes -->
