@@ -136,15 +136,21 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 
 1.  [Sign in](https://github.com/login) to your GitHub account
 
+<br>
+
 2.  Go to <https://github.com/DaniMori/rproj-template>
 
+<br>
+
 3.  Click on "Use this template"
+
+<br>
 
 4.  Click on "Create a new repository"
 
 ## Create a repository (and II)
 
-::: {.fragment .nonincremental}
+::: nonincremental
 5.  Fill in "Repository name" and "Description" with:
 
     > **Repository name:** my-first-repo\
@@ -152,12 +158,12 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 
     OR
 
-    use ***your own project name and description***
+    use ***a project name and description of your choice***
 :::
 
 6.  Choose "Private" visibility
 
-7.  Leave "Include all branches" unticked
+7.  Leave "Include all branches" deselected
 
 8.  Click on "Create repository from template"
 
@@ -190,6 +196,69 @@ We only need the current state of the repository (what is in the last "version"
 of the main branch)
 
 (NEXT)
+:::
+
+## Explore your brand new repo {.nonincremental}
+
+::: nonincremental
+<br>
+
+-   Check interface elements: tabs, branches, files, "About", "README.md"
+
+<br>
+
+-   Check "Repository structure" section in "README.md"
+
+<br>
+
+-   Discuss folders and files created automatically
+
+<br>
+
+-   Check the contents of file `.gitignore`
+:::
+
+::: notes
+(NEXT)
+
+(NEXT)
+
+(NEXT)
+
+Folders try to "mirror" the structure of an R package.
+
+Try to understand what all of them are for.
+
+Consider which ones you may need, and which ones you will want to delete.
+
+`.gitignore` files in subfolders are intended to "create the folder structure"
+
+`.Rprofile` only runs a script (we will see later what and why)
+
+`renv.lock` is the "R environment" file (we will see later)
+
+(NEXT)
+
+.gitignore file will tell "git" that certain files must be "ignored"
+:::
+
+## Add collaborators
+
+<br>
+
+::: nonincremental
+1.  Click on tab "Settings"
+
+2.  Click on "Collaborators"
+
+3.  Click on "Add people"
+
+4.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
+    <!-- TODO: Add Emma's profile too? -->
+
+5.  Click on a collaborator's profile
+
+6.  Click on "Add \<collaborator\> to this repository"
 :::
 
 ## Setting up
