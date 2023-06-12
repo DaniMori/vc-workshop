@@ -13,6 +13,7 @@ format:
   revealjs:
     slide-number:     false
     fig-cap-location: bottom
+    code-annotations: hover
     transition:       none
     incremental:      true
     auto-stretch:     true
@@ -134,6 +135,7 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 
 ## Create a repository (I)
 
+::: nonincremental
 1.  [Sign in](https://github.com/login) to your GitHub account
 
 <br>
@@ -147,6 +149,13 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
 <br>
 
 4.  Click on "Create a new repository"
+:::
+
+::: notes
+Depending on your settings you may be required a 2-factor authentication method
+
+The template will add some useful pre-cooked features to the new repository
+:::
 
 ## Create a repository (and II)
 
@@ -159,43 +168,25 @@ API](https://www.perl.com/article/112/2014/9/5/Analyzing-GitHub-with-the-search-
     OR
 
     use ***a project name and description of your choice***
-:::
 
 6.  Choose "Private" visibility
 
 7.  Leave "Include all branches" deselected
 
 8.  Click on "Create repository from template"
+:::
 
 ::: notes
-Depending on your settings you may be required a 2-factor authentication method
-
-(NEXT)
-
-The template will add some useful pre-cooked features to the new repository
-
-(NEXT)
-
-(NEXT)
-
-(NEXT)
-
 The name must be something short, and representatitve of the project aim
 
 Description must be "short" and direct
 
-(NEXT)
+-   Public: Anyone can see it, even without signing in to GitHub
 
-Public: Anyone can see it, even without signing in to GitHub
-
-Private: Only collaborators (we will add them later on)
-
-(NEXT)
+-   Private: Only collaborators (we will add them later on)
 
 We only need the current state of the repository (what is in the last "version"
 of the main branch)
-
-(NEXT)
 :::
 
 ## Explore your brand new repo {.nonincremental}
@@ -211,35 +202,20 @@ of the main branch)
 
 <br>
 
--   Discuss folders and files created automatically
-
-<br>
-
--   Check the contents of file `.gitignore`
+-   Discuss folders created automatically
 :::
 
 ::: notes
-(NEXT)
-
-(NEXT)
-
-(NEXT)
-
 Folders try to "mirror" the structure of an R package.
 
 Try to understand what all of them are for.
 
 Consider which ones you may need, and which ones you will want to delete.
 
+Let's not pay much attention to the files, by now (we will see later)
+
 `.gitignore` files in subfolders are intended to "create the folder structure"
-
-`.Rprofile` only runs a script (we will see later what and why)
-
-`renv.lock` is the "R environment" file (we will see later)
-
-(NEXT)
-
-.gitignore file will tell "git" that certain files must be "ignored"
+(we will see later on what these files are)
 :::
 
 ## Add collaborators
@@ -261,20 +237,227 @@ Consider which ones you may need, and which ones you will want to delete.
 6.  Click on "Add \<collaborator\> to this repository"
 :::
 
-## Setting up
+# First steps in git
 
-``` bash
-# set a user name globally
-git config --global user.name "username"`
+![](../www/git-logo.svg){fig-align="center" height="350"}
 
-# set an email address globally
-git config --global user.email "email@provider.com"
+<br>
 
-git config --list --global
+::: aside
+*Git Logo* by [Jason Long](https://twitter.com/jasonlong) taken from
+[Git](https://git-scm.com/downloads/logos); licensed under [CC BY
+3.0](https://creativecommons.org/licenses/by/3.0/)
+:::
+
+## Clone repository with Rstudio (I)
+
+<br>
+
+::: nonincremental
+1.  Click on "File" -\> "New project..."
+
+2.  Click on "Version Control"
+
+3.  Click on "Git"
+
+4.  In your GitHub repo click on "Code"
+
+5.  In the "HTTPS" tab, click on the "Copy" button
+
+6.  In the "New Project Wizard" of Rstudio, paste into "Repository URL:"
+:::
+
+## Clone repository with Rstudio (II)
+
+<br>
+
+-   Cloud storage folders can produce synchronization conflicts
+
+-   Network units can conflict with the R environment (more about this in a
+    while...)
+
+-   **NEVER** clone a repository inside another one
+
+::: fragment
+::: callout-tip
+Create a local "Workspace" folder in your "Documents" to store all your cloned
+repos.
+:::
+:::
+
+::: notes
+Avoid using a network unit or cloud storage folder (e.g. Dropbox, OneDrive)
+
+Nesting repositories can give problems
+:::
+
+## Clone repository with Rstudio (and III)
+
+<br>
+
+::: nonincremental
+7.  Choose a local folder in "Create project as subdirectory of:"
+
+8.  Click on "Create Project"
+
+9.  Click on "Sign in with your browser" (\*)
+
+10. Close the browser tab / window
+:::
+
+::: aside
+\*: You will only be asked once
+:::
+
+::: notes
+Signing-in: Necessary because the repository is "private"
+:::
+
+## Explore your local repo
+
+-   `.git`: Home of your git repository
+
+-   Consider deleting unnecessary files / folders
+
+::: {.fragment .nonincremental}
+-   Files:
+    -   `.gitignore`
+
+    -   `README.md` and `README.Rmd`
+
+    -   `LICENSE.md`
+
+    -   `.Rprofile`
+
+    -   `renv.lock`
+:::
+
+::: notes
+In tab "Files" in Rstudio, or in the Windows explorer
+
+`.git`: Important to not mess with it (in the Windows explorer, note that it is
+a hidden folder). If broken, delete and clone again. Manages all the files in
+the repository folder and subfolders; this is why we should never create "nested
+repositories".
+<!-- TODO: "Nested repositories" explanation can go when talking about versioning files and not folders -->
+
+E.g.: Only R code, delete "output", "www/YYYY-mm-dd_Meeting_template.md", etc.
+
+`.gitignore` file will tell "git" that certain files must be "ignored"
+
+`README.md` is the "landing-page documentation" of the project. Consider editing
+directly if you want, and deleting `README.Rmd`?
+
+`.Rprofile` only runs a script (we will see later what and why)
+
+`renv.lock` is the "R environment" file
+:::
+
+## R environment (I)
+
+<br>
+
+Have you noticed...?
+
+<br>
+
+``` r
+# Bootstrapping renv 0.17.3 --------------------------------------------------
+* Downloading renv 0.17.3 ... OK (downloaded binary)
+* Installing renv 0.17.3 ... Done!
+* Successfully installed and loaded renv 0.17.3.
+* Project '<path/to/project>' loaded. [renv 0.17.3]
+* This project contains a lockfile, but none of the recorded packages are installed.
+* Use `renv::restore()` to restore the project library.
 ```
 
 ::: notes
-Why doesn't Rstudio provide GUI functionality for this?
+Created by `renv`: `.Rprofile` is run everytime and R session starts
+
+\[Open `.Rprofile`\]
+
+The script `renv/activate.R` is sourced, initializing package `renv`. This
+package creates and manages an R environment locally.
+:::
+
+## R environment (II)
+
+`renv.lock` file:
+
+```{embed, file="../renv.lock"}
+```
+
+## Update the environment
+
+<br>
+
+::: nonincremental
+1.  Go to the "Packages" tab in Rstudio
+
+<br>
+
+2.  Click on "renv" -\> "Restore library..."
+
+<br>
+
+3.  Click on "Restore"
+:::
+
+::: notes
+Notice that there is a new "drop down" menu, "renv", in the "Packages" tab.
+
+\[AFTER 2:\]
+
+Take a time to explore the "RestoreLibrary" window. Make sense of the different
+columns.
+
+\[AFTER 3:\]
+
+The environment has been restored (i.e. packages installed). It "links" the
+packages in the repository to a local library folder in my computer. This way,
+different repositories can share the same package version.
+
+The link to the library folder can be different. That's why it is not advisable
+to clone a repo in a network unit shared across different computers.
+:::
+
+## Setting up git {.smaller}
+
+<br>
+
+Before committing...
+
+1.  Go to the "Terminal" tab in Rstudio
+
+::: {.fragment .nonincremental}
+2.  Type in:
+
+::: fragment
+::: callout-tip
+Paste in terminal with `Shift-Insert`.
+:::
+
+``` {.bash code-line-numbers="1-2|4-5|7-8"}
+# set a user name globally
+git config --global user.name "User name"
+
+# set an email address globally
+git config --global user.email "email@domain.com"
+
+# check that everything's ok
+git config --list --global
+```
+:::
+:::
+
+::: notes
+The one and only time that we will open the Terminal. Why doesn't Rstudio
+provide GUI functionality for this? I don't know...
+
+Mind the double quotes; type in your name or GitHub user name. This is what will
+appear in your repo "history" when you "commit" or create versions
+
+Type in your email (also mind the double quotes)
 :::
 
 ## Learn more
