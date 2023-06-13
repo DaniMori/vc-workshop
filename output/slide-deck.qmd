@@ -102,7 +102,7 @@ Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
 -   You use a VC server to back-up and collaborate
 :::
 
-## Git jargon
+## git jargon
 
 <br>
 
@@ -481,6 +481,47 @@ License:
 
 -   Convert "citation" to "normal text"
 :::
+
+## Viewing changes
+
+<br>
+
+::: nonincremental
+-   Click on the "Git" tab in Rstudio
+
+-   What do the different "Status" icons mean?
+
+-   Right click on a "deleted file", then "Revert". What happens?
+
+-   BEWARE of reverting modified files!
+:::
+
+::: notes
+-   Deleted folders "do not exist". It only considers "deleted files".
+
+-   Deleting an empty folders does not show anything in the Git tab.
+
+-   Deleting a non-empty folder shows one line for each deleted file in the Git
+    tab.
+
+-   This is why respositories should NEVER be nested
+
+-   REVERT: Recovers the LAST status of a file from the last point in history.
+:::
+
+## (More) git jargon
+
+<br>
+
+-   **Revert**: Revert changes to a file from the last commit
+
+-   **Stage**: Mark changes for begin tracked
+
+-   **Commit**: Create a new "point in the history"
+
+-   **Push**: Send local changes to the remote repository
+
+-   **Pull**: Get remote changes to local repository
 
 ## Learn more
 
