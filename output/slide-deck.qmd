@@ -375,9 +375,9 @@ package creates and manages an R environment locally.
 ```{embed, file="../renv.lock"}
 ```
 
-## Update the environment
+## R environment (and II)
 
-<br>
+Update the environment:
 
 ::: nonincremental
 1.  Go to the "Packages" tab in Rstudio
