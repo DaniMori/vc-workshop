@@ -452,7 +452,7 @@ Type in your email (also mind the double quotes)
 
 -   Delete unnecessary folders / files
 
-::: nonincremental
+::: {.nonincremental .fragment}
 -   Edit `README.md`:
 
     -   Change \<repository-name\> by your repo (lines 2 & 113)
@@ -525,7 +525,7 @@ License:
 :::
 
 ::: notes
-Why "discard chunk" option... Rstudio should drop this feature
+Why "discard chunk" option...? Rstudio should drop this feature
 
 Watch out with "selection", it does not always work
 :::
@@ -543,6 +543,49 @@ Watch out with "selection", it does not always work
 -   **Push**: Send local changes to the remote repository
 
 -   **Pull**: Get remote changes to local repository
+
+## But how does git work?
+
+![](../www/git-workflow.png){fig-align="center" height="520"}
+
+::: aside
+Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
+:::
+
+::: notes
+Use the "Post office" metaphor to explain:
+
+-   Stage: Pack products (changes) to send
+
+-   Commit: Check packages (changes) in to the postal service
+
+(You can check in several "packages" and the post officer can pick them up
+altogether)
+
+-   Push: Send packages to their destination (changes to the repository)
+
+-   Pull: Receive your packages (fetch changes and merge them)
+:::
+
+## DO's and DONT's in git
+
+### DO
+
+-   Pull always when beginning to work
+
+-   Commit + Push often
+
+-   Push when you finish
+
+-   Write "meaningful commmit messages"
+
+::: fragment
+### DON't
+:::
+
+-   Ammend an already pushed commit
+
+-   "Bulk-commit" all your progress
 
 ## Learn more
 
