@@ -508,6 +508,28 @@ License:
 -   REVERT: Recovers the LAST status of a file from the last point in history.
 :::
 
+## Iterating our work
+
+::: nonincremental
+-   Click on the "Commit" button in the "Git" tab of Rstudio
+
+-   **NEVER** click on discard chunk (unless you are 100% sure)
+
+-   Select files / chunks / selection
+
+-   Click on "staged / unstaged" to see the changes "ready to commit"
+
+-   Write message in "Commit message" text box
+
+-   Click on "Commit"
+:::
+
+::: notes
+Why "discard chunk" option... Rstudio should drop this feature
+
+Watch out with "selection", it does not always work
+:::
+
 ## (More) git jargon
 
 <br>
