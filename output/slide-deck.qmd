@@ -456,9 +456,9 @@ Type in your email (also mind the double quotes)
 ::: nonincremental
 -   Edit `README.md`:
 
-    -   Change \<repository-name\> by your repo (lines 2 & 124)
+    -   Change \<repository-name\> by your repo (lines 2 & 113)
 
-    -   Change \<repository-url\> by yours (line 78)
+    -   Change \<repository-url\> by yours (line 66)
 
     -   Edit "License" section (lines 8-32)
 
@@ -470,6 +470,16 @@ Candidate to delete: www
 
 README file: Information for "visitors" of your repository. Useful if you plan
 to make it public at some point.
+
+Repo URL must contain the `.git` suffix!!
+
+License:
+
+-   Change "template" by "project" (line 8)
+
+-   Delete bullet points
+
+-   Convert "citation" to "normal text"
 :::
 
 ## Learn more
