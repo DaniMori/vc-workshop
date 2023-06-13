@@ -27,7 +27,17 @@ format:
 knitr: true
 ---
 
-# git + GitHub: An overview {#title-slide}
+# Setup
+
+<br>
+
+-   **Wi-Fi:** Workshop
+
+<br>
+
+-   **Password:** insu_med20
+
+# git + GitHub: An overview
 
 ![](../www/git-github.webp)
 
