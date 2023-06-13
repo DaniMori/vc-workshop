@@ -14,7 +14,6 @@ format:
     slide-number:            false
     fig-cap-location:        bottom
     code-annotations:        hover
-    link-external-icon:      true
     link-external-newwindow: true
     transition:              none
     incremental:             true
