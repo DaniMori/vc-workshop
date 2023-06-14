@@ -750,6 +750,119 @@ fun of themselves about it.
 But it's better to try, at least...
 :::
 
+# Let's practice!
+
+![](../www/workout.jpg){fig-align="center" height="350"}
+
+<br>
+
+::: aside
+*Lifting Double Dumbbells free icon*, taken from
+[flaticon.com](https://www.flaticon.com/free-icon/lifting-double-dumbbells_82802)
+:::
+
+## Versioning new files (I)
+
+<br>
+
+::: nonincremental
+-   Download <!-- TODO: Add link to script file -->
+
+OR
+
+-   copy ***a script of you own***
+
+to the `src` folder of your local repository
+:::
+
+-   Stage and commit you new script
+
+## Versioning new files (and II)
+
+<br>
+
+::: nonincremental
+-   Download <!-- TODO: Add link to data file -->
+
+OR
+
+-   copy ***a data file of your own***
+
+to the `dat` folder of your local repository
+:::
+
+-   Why it does not appear in the "Git" tab?
+
+-   How would you add a file in `dat` to your repository?
+
+::: notes
+The `dat` folder is ignored (i.e. any file whose path "starts with" that folder)
+
+The line in `.gitignore` can be commented (with a \# in front) or deleted, the
+file staged, and then the line uncommented again.
+
+It can also be done in the terminal (but no need to learn the commands)
+:::
+
+## File paths (I)
+
+<br>
+
+-   Notice the "working directory" on top of the "Console" tab
+
+::: {.nonincremental .fragment}
+-   Change the file path in line <!-- TODO --> of <!-- TODO --> to point to the
+    dataset:
+
+``` r
+DATA_PATH <- "dat/" #TODO: Complete path
+```
+:::
+
+-   Commit the changes
+
+## File paths (II) {.smaller}
+
+<br>
+
+::: fragment
+::: callout-tip
+Use "relative paths" and "user home" to point to files:
+
+``` r
+"./"  # This level
+"../" # One level up
+"~/"  # User home
+```
+:::
+:::
+
+::: fragment
+::: callout-note
+Call `normalizePath()` to check the "absolute path":
+
+``` {.r code-line-numbers="1-3|5-6|8-9"}
+# Path relative to working directory:
+DATA_PATH <- "./dat/data_file.csv"
+normalizePath(DATA_PATH, winslash = '/')
+
+# Path in a folder "at the same level as the repo"
+normalizePath("../datasets/data_file.csv", winslash = '/')
+
+# Path relative to user home:
+normalizePath("~/../local_folder/data_file.csv", winslash = '/')
+```
+:::
+:::
+
+::: notes
+Using relative paths:
+
+-   The working directory will always be the base folder for Rstudio projects
+
+-   Make paths "relative" to the working directory
+:::
+
 ## Learn more
 
 ## 2-col slide {.smaller}
