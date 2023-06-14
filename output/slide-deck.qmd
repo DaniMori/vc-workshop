@@ -6,6 +6,7 @@ author:      |
   Daniel Morillo, Ph.D.\
   [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
   [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
+# TODO: Emmas info & links
 institute:   |
   [![](../www/cibersam.png){height="75"}](https://www.cibersam.es/) &emsp;&emsp;
   [![](../www/ki-logo.jpg){height="85"}](https://ki.se/)
@@ -26,7 +27,7 @@ format:
 knitr: true
 ---
 
-# Setup
+## Setup
 
 <br>
 
@@ -35,6 +36,8 @@ knitr: true
 <br>
 
 -   **Password:** insu_med20
+
+<!-- TODO: Login info for laptop accounts? -->
 
 # git + GitHub: An overview
 
@@ -440,6 +443,8 @@ package creates and manages an R environment locally.
 
 ## R environment (and III)
 
+<br>
+
 Update the environment:
 
 ::: nonincremental
@@ -472,7 +477,7 @@ The link to the library folder can be different. That's why it is not advisable
 to clone a repo in a network unit shared across different computers.
 :::
 
-## Setting up git {.smaller}
+## Setting up git (\*) {.smaller}
 
 <br>
 
@@ -481,13 +486,9 @@ Before committing...
 1.  Go to the "Terminal" tab in Rstudio
 
 ::: {.fragment .nonincremental}
-2.  Type in:
+2.  Type in(\*):
 
 ::: fragment
-::: callout-tip
-Paste in terminal with `Shift-Insert`.
-:::
-
 ``` {.bash code-line-numbers="1-2|4-5|7-8"}
 # set a user name globally
 git config --global user.name "User name"
@@ -498,7 +499,15 @@ git config --global user.email "email@domain.com"
 # check that everything's ok
 git config --list --global
 ```
+
+::: callout-tip
+Paste in terminal with `Shift-Insert`.
 :::
+:::
+:::
+
+::: aside
+\*: You will only have to do this once
 :::
 
 ::: notes
@@ -622,12 +631,13 @@ Watch out with "selection", it does not always work
 
 -   **Ammend**: Overwrite last commit (new changes / message)
 
-# Working with remotes
+# The git workflow
 
-![](../www/git-workflow.png){fig-align="center" height="520"}
+![](../www/git-commands.png){fig-align="center" height="520"}
 
 ::: aside
-Taken from [Hackolade.com](https://hackolade.com/help/Teamcollaboration.html)
+*Envisioning git* by [Doug
+Mahugh](https://www.dougmahugh.com/envisioning-github/)
 :::
 
 ::: notes
@@ -655,7 +665,8 @@ altogether)
 
 <br>
 
--   **Pull**: Get remote changes to local repository
+-   **Pull**: Get remote changes\
+    (to local repository & workspace)
 
 ::: aside
 \*: Last one, I promise!
@@ -710,7 +721,7 @@ Then try the following:
 
 <br>
 
-#### DON't
+#### DON'T
 
 -   Be afraid of changes in files
 
