@@ -322,6 +322,41 @@ Nesting repositories can give problems
 Signing-in: Necessary because the repository is "private"
 :::
 
+## Clone repository (and IV) {.smaller}
+
+<br>
+
+Try the following:
+
+::: nonincremental
+-   Clone someone else's repo
+
+OR
+
+-   Clone <https://github.com/DaniMori/my-first-repo>
+:::
+
+::: fragment
+::: callout-important
+If you get
+
+``` text
+fatal: destination path 'my-first-repo' already exists and is not an empty directory.
+```
+
+try a different local folder name
+:::
+:::
+
+::: notes
+-   You are not asked again to authenticate
+
+-   The folder names must not "collapse", but the local folder name does not
+    need to be the same as the name of the repository. If you are so unlucky as
+    to have a repo with the same name as someone else's, try adding e.g. the
+    other user's name as suffix.
+:::
+
 ## Explore your local repo
 
 -   `.git`: Home of your git repository
