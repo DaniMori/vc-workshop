@@ -821,6 +821,8 @@ It can also be done in the terminal (but no need to learn the commands)
 
 -   Notice the "working directory" on top of the "Console" tab
 
+<br>
+
 ::: {.nonincremental .fragment}
 -   Change the file path in line <!-- TODO --> of <!-- TODO --> to point to the
     dataset:
@@ -878,13 +880,27 @@ Using relative paths:
 
 -   Make sure your script runs without errors
 
+<br>
+
 -   Commit changes
+
+<br>
 
 -   Maybe push your recent commits?
 
-## Viewing the history
+## Viewing your history
 
 -   Click on "History" in the "Git" tab
+
+-   What do the different columns mean?
+
+-   See the detailed changes in a file
+
+-   Click on "View file" in a previous commit
+
+::: notes
+"View file": We can "manually revert" changes in a commit
+:::
 
 ## Learn more
 
