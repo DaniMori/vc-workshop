@@ -225,6 +225,25 @@ Let's not pay much attention to the files, by now (we will see later)
 (we will see later on what these files are)
 :::
 
+## Add collaborators
+
+<br>
+
+::: nonincremental
+1.  Click on tab "Settings"
+
+2.  Click on "Collaborators"
+
+3.  Click on "Add people"
+
+4.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
+    <!-- TODO: Add Emma's profile too? -->
+
+5.  Click on a collaborator's profile
+
+6.  Click on "Add \<collaborator\> to this repository"
+:::
+
 # First steps in git
 
 ![](../www/git-logo.svg){fig-align="center" height="350"}
@@ -528,6 +547,8 @@ License:
 Why "discard chunk" option...? Rstudio should drop this feature
 
 Watch out with "selection", it does not always work
+
+"Ammend" allows you to "correct" and overwrite a (local) commit
 :::
 
 ## (More) git jargon
@@ -567,9 +588,17 @@ altogether)
 -   Pull: Receive your packages (fetch changes and merge them)
 :::
 
-## DO's and DONT's in git
+## DO's and DONT's in git (I)
 
+### DON't
+
+-   Ammend an already pushed commit
+
+-   "Bulk-commit" all your progress
+
+::: fragment
 ### DO
+:::
 
 -   Pull always when beginning to work
 
@@ -579,13 +608,11 @@ altogether)
 
 -   Write "meaningful commmit messages"
 
-::: fragment
-### DON't
-:::
+## DO's and DONT's in git (and II)
 
--   Ammend an already pushed commit
+Meaningful commit messages...
 
--   "Bulk-commit" all your progress
+![](../www/vc-designers.jpg){fig-align="center" height="450"}
 
 ## Learn more
 
