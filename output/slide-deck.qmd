@@ -436,7 +436,7 @@ package creates and manages an R environment locally.
 ```{embed, file="../renv.lock"}
 ```
 
-## R environment (and II)
+## R environment (and III)
 
 Update the environment:
 
@@ -656,6 +656,18 @@ Meaningful commit messages...
 
 ![](../www/vc-designers.jpg){fig-align="center" height="450"}
 
+::: aside
+*Versioning is important* by
+[CommitStrip.com](https://www.commitstrip.com/en/2017/09/12/versioning-is-important/)
+:::
+
+::: notes
+In the end, the typical commit history looks like this... Even SW engineers make
+fun of themselves about it.
+
+But it's better to try, at least...
+:::
+
 ## Learn more
 
 ## 2-col slide {.smaller}
@@ -755,3 +767,4 @@ Text above
 
 ### ¡Muchas gracias!
 :::
+
