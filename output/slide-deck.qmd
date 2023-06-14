@@ -819,9 +819,7 @@ DATA_PATH <- "dat/" #TODO: Complete path
 ```
 :::
 
--   Commit the changes
-
-## File paths (II) {.smaller}
+## File paths (and II) {.smaller}
 
 <br>
 
@@ -839,7 +837,7 @@ Use "relative paths" and "user home" to point to files:
 
 ::: fragment
 ::: callout-note
-Call `normalizePath()` to check the "absolute path":
+You can check "absolute paths" `normalizePath()`:
 
 ``` {.r code-line-numbers="1-3|5-6|8-9"}
 # Path relative to working directory:
@@ -862,6 +860,20 @@ Using relative paths:
 
 -   Make paths "relative" to the working directory
 :::
+
+## Make a new commit
+
+<br>
+
+-   Make sure your script runs without errors
+
+-   Commit changes
+
+-   Maybe push your recent commits?
+
+## Viewing the history
+
+-   Click on "History" in the "Git" tab
 
 ## Learn more
 
