@@ -644,6 +644,44 @@ altogether)
 \*: Last one, I promise!
 :::
 
+## A typical working session in git {.smaller}
+
+<br>
+
+::: nonincremental
+-   Click on "Push"
+
+-   Read the result message
+
+-   Click on "Close"
+
+::: {.fragment fragment-index="1"}
+Then try the following:
+
+-   Open someone else's repo (\*)
+
+-   Open `www/.gitignore`
+
+::: incremental
+-   Click on "Pull" in the "Git" tab
+:::
+:::
+:::
+
+::: aside
+::: {.fragment fragment-index="1"}
+\*: The other one you cloned before
+:::
+:::
+
+::: notes
+-   After committing (once or several times), one must "Push" the changes to the
+    repository. Also, at the end of a session is best practice to "Push", so
+    that we have a backup of the whole commit history in the cloud (i.e. GitHub)
+
+-   
+:::
+
 ## DO's and DONT's in git (I)
 
 ### DON't
@@ -781,4 +819,3 @@ Text above
 
 ### ¡Muchas gracias!
 :::
-
