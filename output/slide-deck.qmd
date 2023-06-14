@@ -336,6 +336,8 @@ OR
 -   Clone <https://github.com/DaniMori/my-first-repo>
 :::
 
+(Select "Open in new session" this time)
+
 ::: fragment
 ::: callout-important
 If you get
@@ -377,6 +379,9 @@ try a different local folder name
 :::
 
 ::: notes
+Make sure you are in YOUR OWN repository (close the other's repo, or switch
+project)
+
 In tab "Files" in Rstudio, or in the Windows explorer
 
 `.git`: Important to not mess with it (in the Windows explorer, note that it is
