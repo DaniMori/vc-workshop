@@ -329,14 +329,12 @@ Signing-in: Necessary because the repository is "private"
 Try the following:
 
 ::: nonincremental
--   Clone someone else's repo
+-   Clone someone else's repo (\*)
 
 OR
 
--   Clone <https://github.com/DaniMori/my-first-repo>
+-   Clone <https://github.com/DaniMori/my-first-repo> (\*)
 :::
-
-(Select "Open in new session" this time)
 
 ::: fragment
 ::: callout-important
@@ -348,6 +346,10 @@ fatal: destination path 'my-first-repo' already exists and is not an empty direc
 
 try a different local folder name
 :::
+:::
+
+::: aside
+\*: Select "Open in new session" this time
 :::
 
 ::: notes
