@@ -605,9 +605,7 @@ Watch out with "selection", it does not always work
 
 -   **Commit**: Create a new "point in the history"
 
--   **Push**: Send local changes to the remote repository
-
--   **Pull**: Get remote changes to local repository
+-   **Ammend**: Overwrite last commit (new changes / message)
 
 ## But how does git work?
 
@@ -630,6 +628,20 @@ altogether)
 -   Push: Send packages to their destination (changes to the repository)
 
 -   Pull: Receive your packages (fetch changes and merge them)
+:::
+
+## (Even more) git jargon (\*)
+
+<br>
+
+-   **Push**: Send local changes to the remote repository
+
+<br>
+
+-   **Pull**: Get remote changes to local repository
+
+::: aside
+\*: Last one, I promise!
 :::
 
 ## DO's and DONT's in git (I)
