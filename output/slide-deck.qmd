@@ -550,6 +550,15 @@ License:
 -   Convert "citation" to "normal text"
 :::
 
+# Versioning in git
+
+![](../www/git-lifecycle-states.png){fig-align="center" height="450"}
+
+::: aside
+Taken from [Git for Network Engineers Series -- The Basics (Part
+I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics-part-1)
+:::
+
 ## Viewing changes
 
 <br>
@@ -613,7 +622,7 @@ Watch out with "selection", it does not always work
 
 -   **Ammend**: Overwrite last commit (new changes / message)
 
-## But how does git work?
+# Working with remotes
 
 ![](../www/git-workflow.png){fig-align="center" height="520"}
 
@@ -640,7 +649,9 @@ altogether)
 
 <br>
 
+::: nonincremental
 -   **Push**: Send local changes to the remote repository
+:::
 
 <br>
 
@@ -650,14 +661,14 @@ altogether)
 \*: Last one, I promise!
 :::
 
-## A typical working session in git {.smaller}
+## Synchronizing with GitHub {.smaller}
 
 <br>
 
 ::: nonincremental
 -   Click on "Push"
 
--   Read the result message
+-   Read response message (from GitHub)
 
 -   Click on "Close"
 
