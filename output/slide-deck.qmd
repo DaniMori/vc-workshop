@@ -681,6 +681,8 @@ Then try the following:
 
 ::: incremental
 -   Click on "Pull" in the "Git" tab
+
+-   Notice the "warning window"?
 :::
 :::
 :::
@@ -696,30 +698,41 @@ Then try the following:
     repository. Also, at the end of a session is best practice to "Push", so
     that we have a backup of the whole commit history in the cloud (i.e. GitHub)
 
--   
+-   Open someone else's repo by "opening the Rstudio project"
+
+-   Click "Pull" and WATCH OUT for the Warning message: It always appears when a
+    file open in the editor "dissapears" from the file system. One must "click
+    on No" out of fear for losing something. Better "click on Yes" to have our
+    workspace in the same state as the remote.
 :::
 
-## DO's and DONT's in git (I)
+## DOs and DON'Ts in git (I) {.smaller}
 
-### DON't
+<br>
+
+#### DON't
+
+-   Be afraid of changes in files
 
 -   Ammend an already pushed commit
 
 -   "Bulk-commit" all your progress
 
+<br>
+
 ::: fragment
-### DO
+#### DO
 :::
 
 -   Pull always when beginning to work
 
 -   Commit + Push often
 
--   Push when you finish
+-   Push always when finishing work
 
 -   Write "meaningful commmit messages"
 
-## DO's and DONT's in git (and II)
+## DOs and DON'Ts in git (and II)
 
 Meaningful commit messages...
 
