@@ -804,7 +804,13 @@ OR
 to the `src` folder of your local repository
 :::
 
--   Stage and commit you new script
+-   Install necessary packages and "Snapshot Library..."
+
+-   Stage and commit your changes
+
+::: notes
+Snapshot library: The new libraries will be added to the `renv.lock`
+:::
 
 ## Versioning new files (and II)
 
