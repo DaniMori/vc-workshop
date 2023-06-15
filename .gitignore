@@ -30,5 +30,5 @@
 
 # Directories and links
 .Rproj.user
-dat
+/dat/
 *.lnk
