@@ -486,7 +486,7 @@ Before committing...
 1.  Go to the "Terminal" tab in Rstudio
 
 ::: {.fragment .nonincremental}
-2.  Type in(\*):
+2.  Type in:
 
 ::: fragment
 ``` {.bash code-line-numbers="1-2|4-5|7-8"}
