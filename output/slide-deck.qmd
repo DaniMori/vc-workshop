@@ -494,7 +494,7 @@ Before committing...
 git config --global user.name "User name"
 
 # set an email address globally
-git config --global user.email "email@domain.com"
+git config --global user.email "GitHubUser@users.noreply.github.com"
 
 # check that everything's ok
 git config --list --global
@@ -517,7 +517,8 @@ provide GUI functionality for this? I don't know...
 Mind the double quotes; type in your name or GitHub user name. This is what will
 appear in your repo "history" when you "commit" or create versions
 
-Type in your email (also mind the double quotes)
+Type in your email (also mind the double quotes). Better use "User name" at
+"users.noreply.github.com"
 :::
 
 ## Let's make some changes
@@ -986,7 +987,24 @@ it in the current version in our file system.
 -   Close git window with `ALT + F4` or go to Rstudio main window with
     `ALT + TAB`
 
-## Learn more
+# Wrapping up
+
+## Interesting resources
+
+-   [Using built-in Git operations in
+    SAS](https://blogs.sas.com/content/sasdummy/2020/11/10/sas-projects-git/)
+
+-   [Integration in
+    Stata](https://medium.com/the-stata-guide/stata-and-github-integration-8c87ddf9784a)
+
+-   [GUI Clients](https://git-scm.com/downloads/guis) (my recommendation,
+    [SourceTree](https://www.sourcetreeapp.com/))
+
+-   [git Commands](https://cloudstudio.com.au/2021/06/26/git-command/) by
+    [Richard Zhao](https://cloudstudio.com.au/about/)
+
+-   More security for your GitHub account: [Adding a new SSH key to your GitHub
+    account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## 2-col slide {.smaller}
 
@@ -1085,4 +1103,3 @@ Text above
 
 ### ¡Muchas gracias!
 :::
-
