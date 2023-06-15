@@ -18,6 +18,24 @@ template created by [Daniel Morillo](https://github.com/DaniMori) and
 licensed under the [Creative Commons Attribution 4.0 International
 license](https://creativecommons.org/licenses/by/4.0/).
 
+### Dataset [`dat/breslow_chatterjee_1999.csv`](dat/breslow_chatterjee_1999.csv)
+
+Dataset `nwtco` from the R [survival
+package](https://cran.r-project.org/package=survival), from
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-breslow_design_1999" class="csl-entry">
+
+Breslow, N. E., and N. Chatterjee. 1999. “Design and Analysis of
+Two-Phase Studies with Binary Outcome Applied to Wilms Tumour
+Prognosis.” *Journal of the Royal Statistical Society: Series C (Applied
+Statistics)* 48 (4): 457–68. <https://doi.org/10.1111/1467-9876.00165>.
+
+</div>
+
+</div>
+
 # Project installation
 
 ## Software components

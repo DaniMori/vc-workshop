@@ -4,6 +4,8 @@ editor_options:
   markdown:
     wrap:      80
     canonical: false
+bibliography: "www/dataset_ref.bib"
+nocite: '@breslow_design_1999'
 ---
 
 # Respository `vc-workshop`
@@ -32,6 +34,14 @@ by [Daniel Morillo][profile] and licensed under the
 [selflink]: https://github.com/DaniMori/rproj-template
 
 [profile]: https://github.com/DaniMori
+
+### Dataset [`dat/breslow_chatterjee_1999.csv`](dat/breslow_chatterjee_1999.csv)
+
+Dataset `nwtco` from the R [survival package](https://cran.r-project.org/package=survival), 
+from
+
+::: {#refs}
+:::
 
 # Project installation
 
