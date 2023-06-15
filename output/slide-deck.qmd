@@ -614,22 +614,28 @@ I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics
 ::: notes
 Why "discard chunk" option...? Rstudio should drop this feature
 
-Watch out with "selection", it does not always work
+Use the `SHIFT` key to select several lines (watch out with "selection", it does
+not always work)
 
-"Ammend" allows you to "correct" and overwrite a (local) commit
+When seeing the "staged" changes, notice how the "stage chunk" and "discard
+chunk" buttons change to "unstage chunk"
 :::
 
 ## (More) git jargon
 
 <br>
 
--   **Revert**: Revert changes to a file from the last commit
-
--   **Stage**: Mark changes for begin tracked
+-   **Stage/add**: Mark changes for begin tracked
 
 -   **Commit**: Create a new "point in the history"
 
+-   **Revert**: Revert changes to a file from the last commit
+
 -   **Ammend**: Overwrite last commit (new changes / message)
+
+::: notes
+"Ammend" allows you to "correct" and overwrite a (local) commit
+:::
 
 # The git workflow
 
@@ -723,11 +729,13 @@ Then try the following:
 
 #### DON'T
 
--   Be afraid of changes in files
+-   Be afraid of changes
 
--   Ammend an already pushed commit
+-   Commit without testing the changes
 
 -   "Bulk-commit" all your progress
+
+-   Ammend an already pushed commit
 
 <br>
 
@@ -737,13 +745,22 @@ Then try the following:
 
 -   Pull always when beginning to work
 
--   Commit + Push often
+-   Commit (+ Push) often
 
 -   Push always when finishing work
 
--   Write "meaningful commmit messages"
+-   Write "meaningful commit messages"
 
 ## DOs and DON'Ts in git (and II)
+
+::: notes
+-   "Bulk-commit": It's better to "be concious" when creating commits; it will
+    pay off in the future.
+
+One does not need to "push" every time changes are committed. But it's good
+practice to push at least once in a while, when one is sure of the changes, or
+at least at the end of the working session
+:::
 
 Meaningful commit messages...
 
@@ -802,7 +819,7 @@ OR
 to the `dat` folder of your local repository
 :::
 
--   Why it does not appear in the "Git" tab?
+-   Why doesn't it show up in the "Git" tab?
 
 -   How would you add a file in `dat` to your repository?
 
@@ -819,11 +836,12 @@ It can also be done in the terminal (but no need to learn the commands)
 
 <br>
 
+::: nonincremental
 -   Notice the "working directory" on top of the "Console" tab
 
 <br>
 
-::: {.nonincremental .fragment}
+::: fragment
 -   Change the file path in line <!-- TODO --> of <!-- TODO --> to point to the
     dataset:
 
@@ -831,12 +849,12 @@ It can also be done in the terminal (but no need to learn the commands)
 DATA_PATH <- "dat/" #TODO: Complete path
 ```
 :::
+:::
 
 ## File paths (and II) {.smaller}
 
 <br>
 
-::: fragment
 ::: callout-tip
 Use "relative paths" and "user home" to point to files:
 
@@ -845,7 +863,6 @@ Use "relative paths" and "user home" to point to files:
 "../" # One level up
 "~/"  # User home
 ```
-:::
 :::
 
 ::: fragment
@@ -874,7 +891,7 @@ Using relative paths:
 -   Make paths "relative" to the working directory
 :::
 
-## Make a new commit
+## Making new commits
 
 <br>
 
