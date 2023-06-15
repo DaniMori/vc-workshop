@@ -905,7 +905,53 @@ Using relative paths:
 
 -   Maybe push your recent commits?
 
+# Making the most out of git
+
+![](../www/no-merge-conflicts.jpg){fig-align="center" height="350"}
+
+<br>
+
+::: aside
+Taken from [makeameme.org](https://makeameme.org/meme/git-merge-no)
+:::
+
+## What to version {.smaller}
+
+<br>
+
+#### DO NOT VERSION
+
+1.  Dataset files
+
+2.  Passwords, private keys, and other "secrets"
+
+3.  Binary files
+
+4.  Outcomes & deliverables
+
+<br>
+
+::: fragment
+#### VERSION
+:::
+
+5.  Your own work
+
+6.  Anything ***necessary to reproduce*** your outcomes (\*)
+
+::: aside
+::: fragment
+\*: Except (1), but even exceptions to (3)
+:::
+:::
+
+::: notes
+6.  E.g. the `renv.lock` file, which stores the environment state
+:::
+
 ## Viewing your history
+
+<br>
 
 -   Click on "History" in the "Git" tab
 
@@ -915,9 +961,30 @@ Using relative paths:
 
 -   Click on "View file" in a previous commit
 
+-   Recover file / lines if necessary
+
 ::: notes
-"View file": We can "manually revert" changes in a commit
+"View file": We can "manually revert" changes in a commit by restoring a
+previous version of the file, or "copying" what we want to recover and pasting
+it in the current version in our file system.
 :::
+
+## Become a git roadrunner
+
+<br>
+
+-   Open git window with `CTRL + ALT + M`
+
+-   Stage files with `SPACE` and `UP / DOWN`, or pointer
+
+-   Move focus to "Commit message" with `SHIFT + TAB` and/or `TAB`
+
+-   Commit with `CTRL + ENTER`
+
+-   Type `SHIFT + TAB` then `ENTER` to push
+
+-   Close git window with `ALT + F4` or go to Rstudio main window with
+    `ALT + TAB`
 
 ## Learn more
 
@@ -1018,3 +1085,4 @@ Text above
 
 ### ¡Muchas gracias!
 :::
+
