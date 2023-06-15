@@ -995,117 +995,30 @@ it in the current version in our file system.
 
 # Wrapping up
 
-## Interesting resources
-
--   [Using built-in Git operations in
-    SAS](https://blogs.sas.com/content/sasdummy/2020/11/10/sas-projects-git/)
-
--   [Integration in
-    Stata](https://medium.com/the-stata-guide/stata-and-github-integration-8c87ddf9784a)
-
--   [GUI Clients](https://git-scm.com/downloads/guis) (my recommendation,
-    [SourceTree](https://www.sourcetreeapp.com/))
-
--   [git Commands](https://cloudstudio.com.au/2021/06/26/git-command/) by
-    [Richard Zhao](https://cloudstudio.com.au/about/)
-
--   More security for your GitHub account: [Adding a new SSH key to your GitHub
-    account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
-## 2-col slide {.smaller}
-
-::: columns
-::: {.column width="60%"}
-![](../www/image_path.jpg){fig-align="center" height="100%"}
-:::
-
-::: {.column width="40%"}
-</br>
-
-::: fragment
--   BP1
-
-    -   BP 1.1
-
-    -   BP 1.2
-:::
-
-</br>
-
-::: fragment
--   BP2
-:::
-:::
-:::
-
-::: aside
-*title* by [Attribution](link)
-:::
-
-::: notes
-<!-- TODO: Notes -->
-:::
-
-## Image with text above
-
-Text above
-
-![](../www/vc-Lucas.jpg){fig-align="center" height="450"}
-
-## Slide with citation
-
-> Citation.\
-
----[Author \@ website](link)
-
-## Embedded-file, centered
-
-Text above
-
 <br>
 
-::: columns
-::: {.column align="center" width="25%"}
-:::
+-   Set up the git client
 
-::: {.column align="center" width="50%"}
-```{embed}
-```
-:::
-:::
+-   Create a repository in GitHub
 
-::: notes
-<!-- TODO: Notes -->
-:::
+-   Clone a remote repository locally
 
-## Subtitles and numbering {.smaller}
+-   Track changes
 
-### Subtitle 1:
+-   Explore history
 
-0.  LE1
-
-1.  LE2
-
-2.  LE3
+## The End {.center}
 
 <br>
-
-::: fragment
-### Subtitle 2:
-
--   BP
-:::
-
-##  {.center}
 
 ::: {#title-slide .center}
 ### Many thanks!
 
-<br>
+<br> <br>
 
 ### Tack så mycket!
 
-<br>
+<br> <br>
 
 ### ¡Muchas gracias!
 :::
