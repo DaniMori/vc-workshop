@@ -481,7 +481,7 @@ to clone a repo in a network unit shared across different computers.
 
 <br>
 
-Before committing...
+Before starting...
 
 1.  Go to the "Terminal" tab in Rstudio
 
