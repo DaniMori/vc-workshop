@@ -39,7 +39,7 @@ by [Daniel Morillo][profile] and licensed under the
 
 [ds]: dat/breslow_chatterjee_1999.csv
 
-Dataset `nwtco` from the R [survival package][surivival]
+Dataset `nwtco` from the R [survival package][survival]
 v3.5-5, originally from:
 
 [survival]: https://cran.r-project.org/package=survival

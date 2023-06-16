@@ -10,7 +10,7 @@ This repository is licensed under the [Creative Commons Attribution 4.0
 International license](https://creativecommons.org/licenses/by/4.0/).
 Please see the [license file](LICENSE.md).
 
-## Components
+## Attributions
 
 This project makes use of the
 [rproj-template](https://github.com/DaniMori/rproj-template) Github
@@ -21,7 +21,8 @@ license](https://creativecommons.org/licenses/by/4.0/).
 ### Dataset [`dat/breslow_chatterjee_1999.csv`](dat/breslow_chatterjee_1999.csv)
 
 Dataset `nwtco` from the R [survival
-package](https://cran.r-project.org/package=survival), from
+package](https://cran.r-project.org/package=survival) v3.5-5, originally
+from:
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 
@@ -35,6 +36,18 @@ Statistics)* 48 (4): 457–68. <https://doi.org/10.1111/1467-9876.00165>.
 </div>
 
 </div>
+
+### Script [`src/Analyses.R`](src/Analyses.R)
+
+Adapted from the [`nwtco` help
+page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco)
+of the R [survival package](https://cran.r-project.org/package=survival)
+v3.5-5.
+
+### Pictures
+
+Origin of all the image files attributed in the corresponding slides in
+[`output/slide.deck.qmd`](output/slide.deck.qmd).
 
 # Project installation
 
