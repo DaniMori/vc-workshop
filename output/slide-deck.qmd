@@ -774,7 +774,7 @@ But it's better to try, at least...
 <br>
 
 ::: nonincremental
--   Download <!-- TODO: Add link to script file -->
+-   Download <https://tinyurl.com/vc-script>
 
 OR
 
@@ -796,7 +796,7 @@ Snapshot library: The new libraries will be added to the `renv.lock`
 <br>
 
 ::: nonincremental
--   Download <!-- TODO: Add link to data file -->
+-   Download <https://tinyurl.com/vc-dataset>
 
 OR
 
