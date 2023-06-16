@@ -59,9 +59,9 @@ v3.5-5.
 ### Pictures
 
 Origin of all the image files attributed in the corresponding slides in
-[`output/slide.deck.qmd`][slides].
+[`output/slide-deck.qmd`][slides].
 
-[slides]: output/slide.deck.qmd
+[slides]: output/slide-deck.qmd
 
 # Project installation
 
