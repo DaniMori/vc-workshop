@@ -37,7 +37,7 @@ Statistics)* 48 (4): 457–68. <https://doi.org/10.1111/1467-9876.00165>.
 
 </div>
 
-### Script [`src/Analyses.R`](src/Analyses.R)
+### Script [`src/Analysis.R`](src/Analysis.R)
 
 Adapted from the [`nwtco` help
 page](https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco)
