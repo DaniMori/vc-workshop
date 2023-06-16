@@ -37,11 +37,20 @@ by [Daniel Morillo][profile] and licensed under the
 
 ### Dataset [`dat/breslow_chatterjee_1999.csv`](dat/breslow_chatterjee_1999.csv)
 
-Dataset `nwtco` from the R [survival package](https://cran.r-project.org/package=survival), 
-from
+Dataset `nwtco` from the R [survival package][surivival]
+v3.5-5, originally from:
+
+[survival]: https://cran.r-project.org/package=survival
 
 ::: {#refs}
 :::
+
+### Script <`src/Analyses.R`>
+
+Adapted from the [`nwtco` help page][nwtco] of the R [survival package][survival]
+v3.5-5.
+
+[nwtco]: https://www.rdocumentation.org/packages/survival/versions/3.5-5/topics/nwtco
 
 # Project installation
 
