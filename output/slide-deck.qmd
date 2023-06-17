@@ -300,7 +300,9 @@ repositories.
 :::
 
 ::: notes
-Avoid using a network unit or cloud storage folder (e.g. Dropbox, OneDrive)
+Avoid using a network a cloud storage folder (e.g. Dropbox, OneDrive)
+
+Network units: May create conflicts with the R environment
 
 Nesting repositories can give problems
 :::
@@ -324,7 +326,7 @@ Nesting repositories can give problems
 :::
 
 ::: notes
-Signing-in: Necessary because the repository is "private"
+9: Signing-in: Necessary because the repository is "private"
 :::
 
 ## Clone repository (and IV) {.smaller}
