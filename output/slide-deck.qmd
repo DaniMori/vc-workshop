@@ -3,10 +3,27 @@ title:       "Version control with git + GitHub for scientific workflows"
 date:        2023-06-20
 date-format: long
 author:      |
-  Daniel Morillo, Ph.D.\
-  [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
-  [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
-# TODO: Emmas info & links
+  <table>
+    <tr>
+      <td>Daniel Morillo, Ph.D.</td>
+      <td>Emma Pettersson</td>
+    </tr>
+    <tr>
+      <td>
+        <center>
+          [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
+          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
+        </center>
+      </td>
+      <td>
+        <center>
+          [![](../www/github-logo.png){height="50"}](https://github.com/emmapett/)&emsp;
+          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0002-4776-9162)
+        </center>
+      </td>
+    </tr>
+  </table>
+# TODO: verify Emma's info & links
 institute:   |
   [![](../www/cibersam.png){height="75"}](https://www.cibersam.es/) &emsp;&emsp;
   [![](../www/ki-logo.jpg){height="85"}](https://ki.se/)
