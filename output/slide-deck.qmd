@@ -340,7 +340,7 @@ Try the following:
 
 OR
 
--   Clone <https://github.com/DaniMori/my-first-repo> (\*)
+-   Clone <https://github.com/emmapett/VC_Workshop> (\*)
 :::
 
 ::: fragment
@@ -360,7 +360,9 @@ try a different local folder name
 :::
 
 ::: notes
--   You are not asked again to authenticate
+-   Let Emma show how she organizes her repository and what is its usefulness
+
+-   You are not asked again to authenticate!!
 
 -   The folder names must not "collapse", but the local folder name does not
     need to be the same as the name of the repository. If you are so unlucky as
