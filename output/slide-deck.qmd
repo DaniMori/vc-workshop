@@ -50,14 +50,22 @@ knitr: true
 <br>
 
 ::: nonincremental
--   **Wi-Fi:** Workshop
+#### WI-FI:
+
+-   **Name:** Workshop
+
+-   **Password:** insu_med20
 
 <br>
 
--   **Password:** insu_med20
+#### FOLLOW LOCALLY:
+
+-   <https://tinyurl.com/follow-vc-workshop>
 :::
 
-<!-- TODO: Login info for laptop accounts? -->
+::: notes
+-   Follow presentation, useful for copy-pasting
+:::
 
 # git + GitHub: An overview
 
