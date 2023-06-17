@@ -1,22 +1,14 @@
 ## ----load-packages----
 library(readr)
 library(dplyr)
-library(forcats)
 library(labelled)
 library(gtsummary)
-library(gt)
 library(survival)
-library(survminer)
 
 ## ----file-system-objects----
-OUTPUT_DIR  <- "output"
 DATASET_DIR <- "dat"
 
 DATASET_PATH      <- file.path(DATASET_DIR, "breslow_chatterjee_1999.csv")
-DESC_TAB_OUT_PATH <- file.path(OUTPUT_DIR,  "descriptives.docx")
-CONT_TAB_OUT_PATH <- file.path(OUTPUT_DIR,  "contingency.docx")
-MODEL_OUT_PATH    <- file.path(OUTPUT_DIR,  "model_coefficients.docx")
-FIGURE_OUT_PATH   <- file.path(OUTPUT_DIR,  "adjusted_curves.png")
 
 ## ----main----
 
@@ -37,9 +29,12 @@ study_data <- read_csv(
 
 ## Recode values:
 study_data <- study_data |> mutate(
-  instit = instit |> fct_recode(Favourable = '1', Unfavourable = '2'),
-  histol = histol |> fct_recode(Favourable = '1', Unfavourable = '2'),
-  stage  = stage  |> fct_recode(I = '1', II = '2', III = '3', IV = '4')
+  instit = instit |>
+    factor(levels = 1:2, labels = c("Favourable", "Unfavourable")),
+  histol = histol |>
+    factor(levels = 1:2, labels = c("Favourable", "Unfavourable")),
+  stage  = stage  |>
+    factor(levels = 1:4, labels = c('I', 'II', 'III', 'IV'))
 )
 
 ## Assign labels:
@@ -64,11 +59,9 @@ study_data <- study_data |>
 
 ## Create descriptive statistics table:
 descriptive_table <- study_data |> tbl_summary(include = -seqno)
-descriptive_table |> as_gt() |> gtsave(DESC_TAB_OUT_PATH)
 
 ## Create contingency table of the histologies:
 contingency_table <- study_data |> tbl_cross(row = instit, col = histol)
-contingency_table |> as_gt() |> gtsave(CONT_TAB_OUT_PATH)
 
 # Statistical modeling and inference: ----
 
@@ -76,15 +69,3 @@ survival_fit <- coxph(Surv(edrel,rel) ~ histol + instit, data = study_data)
 ## TODO: Add covariates?
 
 survival_coef_table <- survival_fit |> tbl_regression()
-survival_coef_table |> as_gt() |> gtsave(MODEL_OUT_PATH)
-
-surv_plot <- survival_fit |> ggadjustedcurves(
-  variable     = "histol",
-  data         = as.data.frame(study_data),
-  method       = "average",
-  legend.title = study_data |> dplyr::pull(histol) |> var_label()
-) +
-  theme_survminer(base_family = "serif")
-## TODO: Update theme / format / labels for journal?
-
-surv_plot |> ggsave(filename = FIGURE_OUT_PATH)
