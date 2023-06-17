@@ -255,7 +255,7 @@ if it is the case.
 <br>
 
 ::: nonincremental
-1.  **In your GitHub repo** click on "Code"
+1.  **In your GitHub repo** click on the "Code" button
 
 2.  In the "HTTPS" tab, click on the "Copy" button
 
@@ -266,6 +266,17 @@ if it is the case.
 5.  Click on "Git"
 
 6.  In the "New Project Wizard" of Rstudio, paste into "Repository URL:"
+:::
+
+::: notes
+1: Not the "Code" tab, but the green "Code" button
+
+<br>
+
+6: Note that Rstudio fills in the folder name for you automatically; you don't
+need to create a new folder to "nest" your repository into it, it will create it
+automatically. If it already exists and is not empty, it will give you an error
+and won't create the repository.
 :::
 
 ## Clone repository (II)
