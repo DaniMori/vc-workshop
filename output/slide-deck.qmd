@@ -31,11 +31,13 @@ knitr: true
 
 <br>
 
+::: nonincremental
 -   **Wi-Fi:** Workshop
 
 <br>
 
 -   **Password:** insu_med20
+:::
 
 <!-- TODO: Login info for laptop accounts? -->
 
@@ -166,7 +168,8 @@ The template will add some useful pre-cooked features to the new repository
 :::
 
 ::: notes
-The name must be something short, and representatitve of the project aim
+The name must be something short, and representatitve of the project aim (beware
+of whitespaces)
 
 Description must be "short" and direct
 
@@ -216,14 +219,23 @@ Let's not pay much attention to the files, by now (we will see later)
 
 2.  Click on "Collaborators"
 
-3.  Click on "Add people"
+3.  Authenticate yourself again (if required)
 
-4.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
+4.  Click on "Add people"
+
+5.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
     <!-- TODO: Add Emma's profile too? -->
 
-5.  Click on a collaborator's profile
+6.  Click on a collaborator's profile
 
-6.  Click on "Add \<collaborator\> to this repository"
+7.  Click on "Add \<collaborator\> to this repository"
+
+8.  Go to "Notifications" and accept invitation(s)
+:::
+
+::: notes
+3: You may be required to authenticate again. Use you password or other method,
+if it is the case.
 :::
 
 # First steps in git
@@ -243,7 +255,7 @@ Let's not pay much attention to the files, by now (we will see later)
 <br>
 
 ::: nonincremental
-1.  **In your GitHub repo** click on "Code"
+1.  **In your GitHub repo** click on the "Code" button
 
 2.  In the "HTTPS" tab, click on the "Copy" button
 
@@ -254,6 +266,17 @@ Let's not pay much attention to the files, by now (we will see later)
 5.  Click on "Git"
 
 6.  In the "New Project Wizard" of Rstudio, paste into "Repository URL:"
+:::
+
+::: notes
+1: Not the "Code" tab, but the green "Code" button
+
+<br>
+
+6: Note that Rstudio fills in the folder name for you automatically; you don't
+need to create a new folder to "nest" your repository into it, it will create it
+automatically. If it already exists and is not empty, it will give you an error
+and won't create the repository.
 :::
 
 ## Clone repository (II)
@@ -277,7 +300,9 @@ repositories.
 :::
 
 ::: notes
-Avoid using a network unit or cloud storage folder (e.g. Dropbox, OneDrive)
+Avoid using a network a cloud storage folder (e.g. Dropbox, OneDrive)
+
+Network units: May create conflicts with the R environment
 
 Nesting repositories can give problems
 :::
@@ -301,7 +326,7 @@ Nesting repositories can give problems
 :::
 
 ::: notes
-Signing-in: Necessary because the repository is "private"
+9: Signing-in: Necessary because the repository is "private"
 :::
 
 ## Clone repository (and IV) {.smaller}
@@ -315,7 +340,7 @@ Try the following:
 
 OR
 
--   Clone <https://github.com/DaniMori/my-first-repo> (\*)
+-   Clone <https://github.com/emmapett/VC_Workshop> (\*)
 :::
 
 ::: fragment
@@ -335,7 +360,9 @@ try a different local folder name
 :::
 
 ::: notes
--   You are not asked again to authenticate
+-   Let Emma show how she organizes her repository and what is its usefulness
+
+-   You are not asked again to authenticate!!
 
 -   The folder names must not "collapse", but the local folder name does not
     need to be the same as the name of the repository. If you are so unlucky as
@@ -517,6 +544,8 @@ Type in your email (also mind the double quotes). Better use "User name" at
 :::
 
 ::: notes
+IMPORTANT!! Do not delete `.Rprofile`, `renv.lock` or the `renv` folder
+
 Delete: `www`
 
 Note that this results in deleting the file(s) within, not the folder
@@ -526,7 +555,7 @@ Other candidates to delete? (Up to each one)
 (NEXT)
 
 README file: Information for "visitors" of your repository. Useful if you plan
-to make it public at some point.
+to make it public at some point. **Give some time to get familiar with it!**
 
 Repo URL must contain the `.git` suffix!!
 
@@ -578,27 +607,29 @@ I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics
 ## Iterating our work
 
 ::: nonincremental
--   Click on the "Commit" button in the "Git" tab of Rstudio
+1.  Click on the "Commit" button in the "Git" tab of Rstudio
 
--   **NEVER** click on discard chunk (unless you are 100% sure)
+2.  **NEVER** click on discard chunk (unless you are 100% sure)
 
--   Select files / chunks / selection
+3.  Select files / chunks / selection
 
--   Click on "staged / unstaged" to see the changes "ready to commit"
+4.  Click on "staged / unstaged" to see the changes "ready to commit"
 
--   Write message in "Commit message" text box
+5.  Write message in "Commit message" text box
 
--   Click on "Commit"
+6.  Click on "Commit"
 :::
 
 ::: notes
-Why "discard chunk" option...? Rstudio should drop this feature
+2: Why "discard chunk" option...? Rstudio should drop this feature
 
-Use the `SHIFT` key to select several lines (watch out with "selection", it does
-not always work)
+3: Use the `SHIFT` key to select several lines (watch out with "selection", it
+does not always work)
 
-When seeing the "staged" changes, notice how the "stage chunk" and "discard
+4: When seeing the "staged" changes, notice how the "stage chunk" and "discard
 chunk" buttons change to "unstage chunk"
+
+5: Git does not allow "empty commmit messages"
 :::
 
 ## (More) git jargon
@@ -609,7 +640,7 @@ chunk" buttons change to "unstage chunk"
 
 -   **Commit**: Create a new "point in the history"
 
--   **Revert**: Revert changes to a file from the last commit
+-   **Revert**: Revert changes to a file (revert to last commit)
 
 -   **Ammend**: Overwrite last commit (new changes / message)
 
@@ -923,7 +954,9 @@ Taken from [makeameme.org](https://makeameme.org/meme/git-merge-no)
 
 5.  Your own work
 
-6.  Anything ***necessary to reproduce*** your outcomes (\*)
+6.  Environment (`renv`) files, if necessary
+
+7.  Anything else ***necessary to reproduce*** your outcomes (\*)
 
 ::: aside
 ::: fragment
@@ -932,7 +965,7 @@ Taken from [makeameme.org](https://makeameme.org/meme/git-merge-no)
 :::
 
 ::: notes
-6.  E.g. the `renv.lock` file, which stores the environment state
+7.  E.g. the `renv.lock` file, which stores the environment state
 :::
 
 ## Viewing your history
@@ -1007,11 +1040,14 @@ it in the current version in our file system.
     Ben Straub
 :::
 
-## Learn more {.smaller}
+## Useful resources {.smaller}
 
 <br>
 
 ::: nonincremental
+-   [Emma](https://github.com/emmapett)'s [Insurance Medicine repository
+    template](https://github.com/emmapett/IM_Template)
+
 -   [I am a Dropbox User and I Don't Get Git](https://garba.org/posts/2021/git/)
     by [Ernesto Gabarino](https://garba.org/about/me/)
 
