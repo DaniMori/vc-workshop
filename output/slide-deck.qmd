@@ -607,27 +607,29 @@ I)](https://blogs.cisco.com/learning/git-for-network-engineers-series-the-basics
 ## Iterating our work
 
 ::: nonincremental
--   Click on the "Commit" button in the "Git" tab of Rstudio
+1.  Click on the "Commit" button in the "Git" tab of Rstudio
 
--   **NEVER** click on discard chunk (unless you are 100% sure)
+2.  **NEVER** click on discard chunk (unless you are 100% sure)
 
--   Select files / chunks / selection
+3.  Select files / chunks / selection
 
--   Click on "staged / unstaged" to see the changes "ready to commit"
+4.  Click on "staged / unstaged" to see the changes "ready to commit"
 
--   Write message in "Commit message" text box
+5.  Write message in "Commit message" text box
 
--   Click on "Commit"
+6.  Click on "Commit"
 :::
 
 ::: notes
-Why "discard chunk" option...? Rstudio should drop this feature
+2: Why "discard chunk" option...? Rstudio should drop this feature
 
-Use the `SHIFT` key to select several lines (watch out with "selection", it does
-not always work)
+3: Use the `SHIFT` key to select several lines (watch out with "selection", it
+does not always work)
 
-When seeing the "staged" changes, notice how the "stage chunk" and "discard
+4: When seeing the "staged" changes, notice how the "stage chunk" and "discard
 chunk" buttons change to "unstage chunk"
+
+5: Git does not allow "empty commmit messages"
 :::
 
 ## (More) git jargon
