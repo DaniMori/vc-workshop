@@ -954,7 +954,9 @@ Taken from [makeameme.org](https://makeameme.org/meme/git-merge-no)
 
 5.  Your own work
 
-6.  Anything ***necessary to reproduce*** your outcomes (\*)
+6.  Environment (`renv`) files, if necessary
+
+7.  Anything else ***necessary to reproduce*** your outcomes (\*)
 
 ::: aside
 ::: fragment
@@ -963,7 +965,7 @@ Taken from [makeameme.org](https://makeameme.org/meme/git-merge-no)
 :::
 
 ::: notes
-6.  E.g. the `renv.lock` file, which stores the environment state
+7.  E.g. the `renv.lock` file, which stores the environment state
 :::
 
 ## Viewing your history
