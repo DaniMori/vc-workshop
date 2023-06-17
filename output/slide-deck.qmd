@@ -219,14 +219,23 @@ Let's not pay much attention to the files, by now (we will see later)
 
 2.  Click on "Collaborators"
 
-3.  Click on "Add people"
+3.  Authenticate yourself again (if required)
 
-4.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
+4.  Click on "Add people"
+
+5.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
     <!-- TODO: Add Emma's profile too? -->
 
-5.  Click on a collaborator's profile
+6.  Click on a collaborator's profile
 
-6.  Click on "Add \<collaborator\> to this repository"
+7.  Click on "Add \<collaborator\> to this repository"
+
+8.  Go to "Notifications" and accept invitation(s)
+:::
+
+::: notes
+3: You may be required to authenticate again. Use you password or other method,
+if it is the case.
 :::
 
 # First steps in git
