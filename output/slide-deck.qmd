@@ -544,6 +544,8 @@ Type in your email (also mind the double quotes). Better use "User name" at
 :::
 
 ::: notes
+IMPORTANT!! Do not delete `.Rprofile`, `renv.lock` or the `renv` folder
+
 Delete: `www`
 
 Note that this results in deleting the file(s) within, not the folder
@@ -553,7 +555,7 @@ Other candidates to delete? (Up to each one)
 (NEXT)
 
 README file: Information for "visitors" of your repository. Useful if you plan
-to make it public at some point.
+to make it public at some point. **Give some time to get familiar with it!**
 
 Repo URL must contain the `.git` suffix!!
 
