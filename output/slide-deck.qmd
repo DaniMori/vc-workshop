@@ -31,11 +31,13 @@ knitr: true
 
 <br>
 
+::: nonincremental
 -   **Wi-Fi:** Workshop
 
 <br>
 
 -   **Password:** insu_med20
+:::
 
 <!-- TODO: Login info for laptop accounts? -->
 
