@@ -2,7 +2,7 @@
 library(readr)
 library(dplyr)
 library(labelled)
-library(gtsummary)
+# library(gtsummary) ## TODO: Install gtsummary if necessary
 library(survival)
 
 ## ----file-system-objects----
@@ -43,9 +43,12 @@ study_data <- study_data |> mutate(
 study_data <- study_data |> set_variable_labels(
   instit = "Histology (from local institution)",
   histol = "Histology (from central lab)",
-  stage  = "Disease stage"
-  ## TODO: Complete labels for: `study`, `rel`, `edrel`, `age`
-  ## TODO: Transform `edrel` and `age` to years
+  stage  = "Disease stage",
+  study  = "Study",
+  rel    = "Relapse", # As a 0/1 integer for compatibility with {survival}
+  edrel  = "Time to relapse (days)",
+  age    = "Age (months)"
+  ## TODO: Transform `edrel` and `age` to years?
 )
 
 
@@ -57,15 +60,18 @@ study_data <- study_data |>
 
 # Descriptive analysis: ----
 
+# NOTE: Descriptives not computed, as `gtsummary` package is too heavy
+
 ## Create descriptive statistics table:
-descriptive_table <- study_data |> tbl_summary(include = -seqno)
+# descriptive_table <- study_data |> tbl_summary(include = -seqno)
 
 ## Create contingency table of the histologies:
-contingency_table <- study_data |> tbl_cross(row = instit, col = histol)
+# contingency_table <- study_data |> tbl_cross(row = instit, col = histol)
 
 # Statistical modeling and inference: ----
 
 survival_fit <- coxph(Surv(edrel,rel) ~ histol + instit, data = study_data)
 ## TODO: Add covariates?
 
-survival_coef_table <- survival_fit |> tbl_regression()
+# NOTE: Output table not created, as `gtsummary` package is too heavy
+# survival_coef_table <- survival_fit |> tbl_regression()
