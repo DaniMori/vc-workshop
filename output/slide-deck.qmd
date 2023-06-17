@@ -168,7 +168,8 @@ The template will add some useful pre-cooked features to the new repository
 :::
 
 ::: notes
-The name must be something short, and representatitve of the project aim
+The name must be something short, and representatitve of the project aim (beware
+of whitespaces)
 
 Description must be "short" and direct
 
