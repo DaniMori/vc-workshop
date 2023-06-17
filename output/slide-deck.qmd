@@ -458,11 +458,11 @@ Have you noticed...?
 ```
 
 ::: notes
-Created by `renv`: `.Rprofile` is run everytime and R session starts
+Created by `{renv}`: `.Rprofile` is run everytime and R session starts
 
 (OPEN `.Rprofile`)
 
-The script `renv/activate.R` is sourced, initializing package `renv`. This
+The script `renv/activate.R` is sourced, initializing package `{renv}`. This
 package creates and manages an R environment locally.
 :::
 
@@ -980,7 +980,7 @@ Taken from [makeameme.org](https://makeameme.org/meme/git-merge-no)
 
 5.  Your own work
 
-6.  Environment (`renv`) files, if necessary
+6.  Environment (`{renv}`) files, if necessary
 
 7.  Anything else ***necessary to reproduce*** your outcomes (\*)
 

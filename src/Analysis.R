@@ -2,7 +2,7 @@
 library(readr)
 library(dplyr)
 library(labelled)
-# library(gtsummary) ## TODO: Install gtsummary if necessary
+# library(gtsummary) ## TODO: Install {gtsummary} if necessary
 library(survival)
 
 ## ----file-system-objects----
