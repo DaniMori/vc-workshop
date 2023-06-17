@@ -29,15 +29,16 @@ institute:   |
   [![](../www/ki-logo.jpg){height="85"}](https://ki.se/)
 format:
   revealjs:
-    slide-number:            false
-    fig-cap-location:        bottom
-    code-annotations:        hover
-    link-external-newwindow: true
-    transition:              none
-    incremental:             true
     auto-stretch:            true
+    code-annotations:        hover
+    fig-cap-location:        bottom
+    incremental:             true
+    link-external-newwindow: true
+    multiplex:               true
     self-contained:          true
+    slide-number:            false
     theme:                   ../www/extra-styles.scss
+    transition:              none
     view-distance:           3
     template-partials:
       - ../www/title-slide.html
