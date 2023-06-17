@@ -640,7 +640,7 @@ chunk" buttons change to "unstage chunk"
 
 -   **Commit**: Create a new "point in the history"
 
--   **Revert**: Revert changes to a file from the last commit
+-   **Revert**: Revert changes to a file (revert to last commit)
 
 -   **Ammend**: Overwrite last commit (new changes / message)
 
