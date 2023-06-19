@@ -81,8 +81,6 @@ I](https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9
 \@ [Medium.com](https://medium.com/)
 :::
 
-<!-- Alt image from: https://dev.to/chrisachinga/git-and-github-install-configure-51pa -->
-
 ## What is git?
 
 <br>
@@ -97,15 +95,6 @@ I](https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9
 
 -   Allows "time-travelling"
 
-<!-- TODO: Include Delorean pic from https://ccn-journal-prod.azurewebsites.net/2021/06/25/back-to-the-future-delorean-says-its-coming-back-and-launches-an-auction/ -->
-
-```{=html}
-<!-- ::: aside
-
-*title* by [Attribution](link)
-
-::: -->
-```
 ## What is Github?
 
 <br>
