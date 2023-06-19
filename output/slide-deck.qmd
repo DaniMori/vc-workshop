@@ -73,7 +73,9 @@ knitr: true
 
 # git + GitHub: An overview
 
-![](../www/git-github.webp)
+![](../www/git-github.webp){fig-align="center" height="350"}
+
+<br>
 
 ::: aside
 Taken from [git + GitHub for beginners
