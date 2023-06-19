@@ -878,11 +878,13 @@ It can also be done in the terminal (but no need to learn the commands)
 <br>
 
 ::: fragment
--   Change the file path in line <!-- TODO --> of <!-- TODO --> to point to the
-    dataset:
+-   Change the file path in line 11 of `src/Analysis.R` to point to the dataset:
 
 ``` r
-DATA_PATH <- "dat/" #TODO: Complete path
+DATASET_DIR <- "dat"
+
+# TODO: Complete path
+DATASET_PATH <- file.path(DATASET_DIR, "breslow_chatterjee_1999.csv")
 ```
 :::
 :::

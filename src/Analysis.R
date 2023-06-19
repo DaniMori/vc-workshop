@@ -6,9 +6,12 @@ library(labelled)
 library(survival)
 
 ## ----file-system-objects----
+
 DATASET_DIR <- "dat"
 
-DATASET_PATH      <- file.path(DATASET_DIR, "breslow_chatterjee_1999.csv")
+# TODO: Complete path
+DATASET_PATH <- file.path(DATASET_DIR, "breslow_chatterjee_1999.csv")
+
 
 ## ----main----
 
