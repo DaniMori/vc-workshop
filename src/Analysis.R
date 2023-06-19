@@ -67,9 +67,11 @@ study_data <- study_data |>
 
 ## Create descriptive statistics table:
 # descriptive_table <- study_data |> tbl_summary(include = -seqno)
+## TODO: Uncomment if using {gtsummary}
 
 ## Create contingency table of the histologies:
 # contingency_table <- study_data |> tbl_cross(row = instit, col = histol)
+## TODO: Uncomment if using {gtsummary}
 
 # Statistical modeling and inference: ----
 
@@ -78,3 +80,4 @@ survival_fit <- coxph(Surv(edrel,rel) ~ histol + instit, data = study_data)
 
 # NOTE: Output table not created, as `gtsummary` package is too heavy
 # survival_coef_table <- survival_fit |> tbl_regression()
+## TODO: Uncomment if using {gtsummary}
