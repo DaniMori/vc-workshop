@@ -47,8 +47,6 @@ knitr: true
 
 ## Setup
 
-<br>
-
 ::: nonincremental
 #### Laptop log-in:
 
@@ -61,8 +59,6 @@ knitr: true
 -   **Name:** VCW
 
 -   **Password:** vcw_2023
-
-<br>
 
 #### FOLLOW LOCALLY:
 
