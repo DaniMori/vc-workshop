@@ -50,11 +50,17 @@ knitr: true
 <br>
 
 ::: nonincremental
+#### Laptop log-in:
+
+-   **User name:** VCW
+
+-   **Password:** vcw_2023
+
 #### WI-FI:
 
--   **Name:** Workshop
+-   **Name:** VCW
 
--   **Password:** insu_med20
+-   **Password:** vcw_2023
 
 <br>
 
@@ -64,7 +70,11 @@ knitr: true
 :::
 
 ::: notes
--   Follow presentation, useful for copy-pasting
+-   Laptop login: Make sure the keyboard is in En_UK
+
+-   
+
+-   Follow presentation, useful for copy-pasting (tested in Chrome)
 :::
 
 # git + GitHub: An overview
