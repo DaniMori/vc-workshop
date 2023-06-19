@@ -242,8 +242,8 @@ Let's not pay much attention to the files, by now (we will see later)
 
 4.  Click on "Add people"
 
-5.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
-    <!-- TODO: Add Emma's profile too? -->
+5.  Search for each other, [DaniMori](https://github.com/DaniMori), or
+    [emmapett](https://github.com/emmapett)
 
 6.  Click on a collaborator's profile
 
