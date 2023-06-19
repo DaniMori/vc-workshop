@@ -73,15 +73,15 @@ knitr: true
 
 # git + GitHub: An overview
 
-![](../www/git-github.webp)
+![](../www/git-github.webp){fig-align="center" height="350"}
+
+<br>
 
 ::: aside
 Taken from [git + GitHub for beginners
 I](https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9c3)
 \@ [Medium.com](https://medium.com/)
 :::
-
-<!-- Alt image from: https://dev.to/chrisachinga/git-and-github-install-configure-51pa -->
 
 ## What is git?
 
@@ -97,15 +97,6 @@ I](https://medium.com/cs-note/git-and-github-for-beginners-i-tutorial-263caa01f9
 
 -   Allows "time-travelling"
 
-<!-- TODO: Include Delorean pic from https://ccn-journal-prod.azurewebsites.net/2021/06/25/back-to-the-future-delorean-says-its-coming-back-and-launches-an-auction/ -->
-
-```{=html}
-<!-- ::: aside
-
-*title* by [Attribution](link)
-
-::: -->
-```
 ## What is Github?
 
 <br>
@@ -253,8 +244,8 @@ Let's not pay much attention to the files, by now (we will see later)
 
 4.  Click on "Add people"
 
-5.  Search for each other, or [\@DaniMori](https://github.com/DaniMori)
-    <!-- TODO: Add Emma's profile too? -->
+5.  Search for each other, [DaniMori](https://github.com/DaniMori), or
+    [emmapett](https://github.com/emmapett)
 
 6.  Click on a collaborator's profile
 
@@ -889,11 +880,13 @@ It can also be done in the terminal (but no need to learn the commands)
 <br>
 
 ::: fragment
--   Change the file path in line <!-- TODO --> of <!-- TODO --> to point to the
-    dataset:
+-   Change the file path in line 11 of `src/Analysis.R` to point to the dataset:
 
 ``` r
-DATA_PATH <- "dat/" #TODO: Complete path
+DATASET_DIR <- "dat"
+
+# TODO: Complete path
+DATASET_PATH <- file.path(DATASET_DIR, "breslow_chatterjee_1999.csv")
 ```
 :::
 :::
