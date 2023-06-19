@@ -72,8 +72,6 @@ knitr: true
 ::: notes
 -   Laptop login: Make sure the keyboard is in En_UK
 
--   
-
 -   Follow presentation, useful for copy-pasting (tested in Chrome)
 :::
 
