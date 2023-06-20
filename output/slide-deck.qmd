@@ -18,7 +18,6 @@ author:      |
       <td>
         <center>
           [![](../www/github-logo.png){height="50"}](https://github.com/emmapett/)&emsp;
-          [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0002-4776-9162)
         </center>
       </td>
     </tr>
